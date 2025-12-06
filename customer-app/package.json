@@ -1,13 +1,16 @@
 {
-  "name": "@UPT-FAING-EPIS/atm_si889_pds3",
-  "version": "1.0.0",
-  "description": "ATM application for demonstrating Command Design Pattern.",
-  "author": "UPT-FAING-EPIS",
+  "name": "@UPT-FAING-EPIS/customer-app_si889_pds2",
+  "version": "0.0.1",
+  "description": "Customer application package",
+  "author": "David Jordan Anampa Pancca",
   "private": false,
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-02-nest-David-Anampa.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "build": "nest build",
@@ -21,8 +24,7 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json",
-    "prepare": "npm run build"
+    "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
@@ -55,9 +57,6 @@
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.20.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   },
   "jest": {
     "moduleFileExtensions": [
